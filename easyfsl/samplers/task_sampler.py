@@ -36,7 +36,8 @@ class TaskSampler(Sampler):
             n_query: number of query images for each class in one task
             n_tasks: number of tasks to sample
         """
-        super().__init__(data_source=None)
+        # super().__init__(data_source=None)
+        super().__init__()
         self.n_way = n_way
         self.n_shot = n_shot
         self.n_query = n_query
